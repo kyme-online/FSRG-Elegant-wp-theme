@@ -40,6 +40,24 @@
 
 							<div class="home-mobile">
 
+								<?php if ( have_posts() ): ?>
+															<!--h2>Latest Posts</h2-->	
+															<ol>
+
+															<?php while ( have_posts() ) : the_post(); ?>
+																<li>
+																	<article>
+																		<!--a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a><br/--!> 
+																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
+																	</article><p><?php the_content(); ?></p>
+																	
+																</li>
+															<?php endwhile; ?>
+															</ol>
+															<?php else: ?>
+															<h2>No posts to display</h2>
+												<?php endif; ?>
+
 
 							<div id="mobile-about">
 
@@ -139,4 +157,18 @@
   ga('send', 'pageview');
 
 </script>
+
+
+<div itemscope="itemscope" itemtype="http://schema.org/LocalBusiness">
+    <span itemprop="name">Four Seasons Ramesh Gallery</span>
+    <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">8390, SW, 72 AVE, Apt 807, 33143 Miami, FL.</span>
+        <span itemprop="addressLocality">Dubai</span>,
+        <span itemprop="addressRegion">Dubai</span>
+        <span itemprop="postalCode">504411</span>
+        <span itemprop="addressCountry">AE</span>
+    </div>
+    Phone: <span itemprop="telephone">+971 4 3349090</span>
+    Website: <a itemprop="URL">http://fsrg.com/</a>
+</div>
 

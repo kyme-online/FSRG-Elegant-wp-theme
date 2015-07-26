@@ -29,10 +29,10 @@
 															<a href="http://fineartlamps.com/" target="_blank" ><img src="<?php echo get_template_directory_uri().'/images/finearts.png'; ?>" /></a>
 															<a href="http://sonnemanawayoflight.com/" target="_blank" ><img src="<?php echo get_template_directory_uri().'/images/sonneman.png'; ?>" /></a>
 															<a href="http://alineahome.com/" target="_blank" ><img src="<?php echo get_template_directory_uri().'/images/alinea.png'; ?>" /></a>
-														</div>
+															</div>
 
 
-									</div>
+									     </div>
 
 							     		<div style="clear:both"></div>
 

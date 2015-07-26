@@ -1,25 +1,34 @@
 <!DOCTYPE HTML>
-<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]--> 
-<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]--> 
-<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]--> 
-<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]--> 
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
 <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en">
 	<head>
 		<title><?php bloginfo( 'name' ); ?><?php wp_title( '|' ); ?></title>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Remove if you're not building a responsive site. (But then why would you do such a thing?) -->
-		
+
 		<meta name="msvalidate.01" content="30C7222701761E7DBEFC6E4BF49EA362" /> <!-- Bing for SEO web masterTool -->
-		
+
 		<meta name="p:domain_verify" content="137a1a8ed3d895c2505f1965dceaf55a"/> <!-- For Pinterest Search tag -->
 
-		
+
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico"/>
-		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> <!-- For full background effect -->
-	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> <!-- For full background effect -->
+		<script src="//malsup.github.com/jquery.cycle2.js"></script> <!-- DISSABLE THIS LINE IF FILE IS UPLOADED -->
+
+
+		<!-- PLEASE ENABLE THIS LINE BEFORE UPLOADING TO SERVER -include Cycle2 -->
+		<!--script src="/wp-content/themes/starkers-master/js/jquery.cycle2.js"></script-->
+		<!-- include one or more optional Cycle2 plugins -->
+		<!--script src="/wp-content/themes/starkers-master/js/jquery.cycle2.carousel.js"></script-->
+
+
+		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW, ARCHIVE" /> <!-- GoDaddy Meta tags -->
 
 		<?php wp_head(); ?>
 
@@ -65,31 +74,31 @@
 				 	<!--a class="fb" href="https://www.facebook.com/fourseasonsrameshgallery"></a-->
 
 				 	<div class="fb-like fb" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-				 
+
 				 	<a class="pinterest" href="https://www.pinterest.com/fsrgdubai/"></a>
 				 	<a class="plus" href="https://plus.google.com/+FourSeasonsRameshGalleryDubai/posts"></a>
 				 	<a class="instagram" href="https://instagram.com/fsrguae"></a>
 				 		<div style="clear:both"></div>
-				 </div> 
+				 </div>
 
 	</div>
 
-	
+
 
 	<!--<div id="bg-body">
 		</div><!--end of bg-body-line-->
 
-		
-				<div id="header">	
+
+				<div id="header">
 						   	<div id="logo">
 						   		<a href="<?php echo home_url(); ?>"></a><p class="mobile-logo">FOUR SEASONS RAMESH GALLERY</p>
 						   	</div>
-                            	
-							<div id="upper_nav"> 
+
+							<div id="upper_nav">
 
 							<ul id="sddm">
 
-									<li><a href="" class="dropdown navlink btn" id="dropdown_one">FURNITURE</a> 
+									<li><a href="" class="dropdown navlink btn" id="dropdown_one">FURNITURE</a>
 										<div id="m1" class="submenu">
 											 <span class="submenu-wrap">
 											 	<span class="submenu-content">
@@ -103,7 +112,7 @@
 									<li><a href="" class="dropdown navlink btn" id="dropdown_one">ACCESSORIES</a>
 										<div id="m2" class="submenu">
 											 <span class="submenu-wrap">
-												<span class="submenu-content"> 
+												<span class="submenu-content">
 													<span class="submenu-item bgsubmenu"><img class="imagesubmenu" src="<?php echo get_template_directory_uri().'/images/vase-subpage.png'; ?>" /><a href="/vases/" class="alignmentbtn3"><div class="linktext-menu">VASES</div></a></span>
 													<span class="submenu-item bgsubmenu"><img class="imagesubmenu" src="<?php echo get_template_directory_uri().'/images/sculpture-subpage.png'; ?>" /><a href="/sculpture/" class="alignmentbtn4"><div class="linktext-menu">SCULPTURE</div></a></span>
 													<span class="submenu-item bgsubmenu"><img class="imagesubmenu" src="<?php echo get_template_directory_uri().'/images/candleholder-subpage.png'; ?>" /><a href="/candleholder/" class="alignmentbtn5"><div class="linktext-menu">CANDLE HOLDER</div></a></span>
@@ -126,18 +135,11 @@
 
 								<li><a href="/services/" class="btn-temp">SERVICES</a></li>
 								<li><a href="/about/" class="btn-temp">ABOUT US</a></li>
-								<li><a href="http://fsrg.com/blog/" class="btn-temp">BLOG</a></li>
-								<li><a href="/contact/" class="btn-temp">CONTACT US</a></li>	
+								<li><a href="https://fsrg.com/blog/" class="btn-temp">BLOG</a></li>
+								<li><a href="/contact/" class="btn-temp">CONTACT US</a></li>
 							</ul>
-                               
+
 							</div>
                         </div>
 
  </div>
-
-
-
-
-
-
-

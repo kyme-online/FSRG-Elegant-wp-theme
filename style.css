@@ -3144,6 +3144,34 @@ div#footer{
 			background: url(images/submenubg.png) repeat-x;
 		}  
 
+	#contentpost-sitemap{
+			width: 510px;
+		 	height: auto;
+		 	float: left;
+		 	margin-top:35px;
+		 	position: relative;
+	}
+	#contentpost-sitemap p{
+				width: auto;
+		 		height: auto;
+		 		color: #494949;
+		 		margin-top:30px;
+		 		margin-left:35px;
+		 		text-align: left;
+		 		font-size: 13px;
+		 		color: black;
+		 		font-family: arial;
+	}
+	#contentpost-sitemap a{
+				width: auto;
+				font: 22px arial;
+		 		color: #494949;
+		 		text-align: left;
+		 		left: 40px;
+		 		font-weight: bolder;
+		 		position: relative;
+	}
+
 /*******  End of Special Classes & Divs ********/
 
 /** END OF SPECIAL CLASSES AND DIV  **/ 

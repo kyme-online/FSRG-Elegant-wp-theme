@@ -9,50 +9,63 @@
  	 * @since 		Starkers 4.0
 	 */
 
+	
 	/* ========================================================================================================================
-	
+
 	Required external files
-	
+
 	======================================================================================================================== */
 
 	require_once( 'external/starkers-utilities.php' );
 
 	/* ========================================================================================================================
-	
+
 	Theme specific settings
 
 	Uncomment register_nav_menus to enable a single menu with the title of "Primary Navigation" in your theme
-	
+
 	======================================================================================================================== */
 
 	add_theme_support('post-thumbnails');
-	
+
 	// register_nav_menus(array('primary' => 'Primary Navigation'));
 
+
+
 	/* ========================================================================================================================
-	
+
 	Actions and Filters
-	
+
 	======================================================================================================================== */
 
 	add_action( 'wp_enqueue_scripts', 'starkers_script_enqueuer' );
 
 	add_filter( 'body_class', array( 'Starkers_Utilities', 'add_slug_to_body_class' ) );
 
+	/* ============ Temporarily for modifying the http  =========
+	add_filter('site_url',  'wpadmin_filter', 10, 3);
+ 	function wpadmin_filter( $url, $path, $orig_scheme ) {
+  	$old  = array( "/(wp-admin)/");
+  	$admin_dir = WP_ADMIN_DIR;
+  	$new  = array($admin_dir);
+  	return preg_replace( $old, $new, $url, 1);
+ 	}
+*/
+
 	/* ========================================================================================================================
-	
+
 	Custom Post Types - include custom post types and taxonimies here e.g.
 
 	e.g. require_once( 'custom-post-types/your-custom-post-type.php' );
-	
+
 	======================================================================================================================== */
 
 
 
 	/* ========================================================================================================================
-	
+
 	Scripts
-	
+
 	======================================================================================================================== */
 
 	/**
@@ -62,7 +75,7 @@
 	 * @author Keir Whitaker
 	 */
 
-	function starkers_script_enqueuer() {		
+	function starkers_script_enqueuer() {
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
 
@@ -75,26 +88,26 @@
 		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );
 
-		
-	}	
+
+	}
 
 
 	/* ========================================================================================================================
-	
+
 	Comments
-	
+
 	======================================================================================================================== */
 
 	/**
-	 * Custom callback for outputting comments 
+	 * Custom callback for outputting comments
 	 *
 	 * @return void
 	 * @author Keir Whitaker
 	 */
 	function starkers_comment( $comment, $args, $depth ) {
-		$GLOBALS['comment'] = $comment; 
+		$GLOBALS['comment'] = $comment;
 		?>
-		<?php if ( $comment->comment_approved == '1' ): ?>	
+		<?php if ( $comment->comment_approved == '1' ): ?>
 		<li>
 			<article id="comment-<?php comment_ID() ?>">
 				<?php echo get_avatar( $comment ); ?>
@@ -125,7 +138,7 @@
 		) );
 	}
 	add_action( 'widgets_init', 'arphabet_widgets_init' );
-	
+
 
 
 // Creates Download post type
@@ -153,19 +166,21 @@
 
 
 
+/********************
+*
+*  This blocks is for adding TAG for the page.
+*
+*/
+// add tag support to pages
+function tags_support_all() {
+	register_taxonomy_for_object_type('post_tag', 'page');
+}
 
+// ensure all tags are included in queries
+function tags_support_query($wp_query) {
+	if ($wp_query->get('tag')) $wp_query->set('post_type', 'any');
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// tag hooks
+add_action('init', 'tags_support_all');
+add_action('pre_get_posts', 'tags_support_query');
