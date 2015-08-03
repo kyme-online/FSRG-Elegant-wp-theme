@@ -65,6 +65,18 @@ h6 					{/* font-weight:bold; /* This helps to identify headings at the initial 
 
 /************* My Style Themes starts here | Design by: Mendez R. *********/
 
+html {
+overflow-y: auto;
+}
+
+#homecontent{
+	position: fixed;
+}
+
+header { /* non-mobile */
+margin-bottom: 40px;
+}
+
 
 
 
@@ -72,14 +84,20 @@ h6 					{/* font-weight:bold; /* This helps to identify headings at the initial 
 03 Media queries (using a mobile-first approach) ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
+
+
 /* 400 and up */
 @media only screen and (max-width: 760px), only screen and (max-device-width: 760px) {
+#homecontent {  
+	position:relative; 
+}
 
 	header{
 		width: 100%;
 		height: 45px;
 		display: block;
 		background: url(images/mobileheaderbg.png);
+		margin-bottom: auto;
 		text-indent: 100% !important;
 		white-space: nowrap !important;
 		overflow: hidden !important;
@@ -115,6 +133,7 @@ h6 					{/* font-weight:bold; /* This helps to identify headings at the initial 
 	}	
 	.cycle-slideshow{  /* For Fade Image effect */
 		display: none !important;
+
 	}
 		.cycle-slideshow img{
 			display: none !important;
@@ -638,7 +657,7 @@ div#upper_nav{
 #sddm li:last-child{
 	background: none;
 }
-.btn{   /* Puts the btn at middle  */
+a.btn{   /* Puts the btn at middle  */
 	width: 130px;
 	height: 50px !important;
 	padding-top: 18px !important;
@@ -866,6 +885,7 @@ div#header{
 	width:100%;
 	top: 30px;
 	position: relative;
+	margin-bottom: 35px;
 	background: url(images/menubg.png);
 
 }
@@ -874,7 +894,7 @@ div#header{
 		height: auto;
 		position: fixed;
 		z-index: 999;
-		background: url(images/menubg.png);
+		background: none;
 	}
 	.fixmenu-mobile{
 	}
@@ -938,13 +958,13 @@ div#upper_nav{
 #sddm li:last-child{
 	background: none;
 }
-.btn{   /* Puts the btn at middle  */
+#sddm li a.btn{   /* Puts the btn at middle  */
 	width: 130px;
 	height: 50px !important;
 	padding-top: 18px !important;
 	font: 12px arial !important;
 }
-.btn-temp{   /* Arrange the services-Aboutus-Contacts */
+#sddm li a.btn-temp{   /* Arrange the services-Aboutus-Contacts */
 	width: 130px;
 	
 	padding-top: 18px !important;
@@ -1271,7 +1291,7 @@ div#right{
 						text-align: left;
 					}
 						
-					#contact a{
+					#contact article a{
 						width: auto;
 						height: auto;
 						margin-left:25px;
@@ -1345,6 +1365,9 @@ div#right{
 						float: left !important;
 						color: #494949;
 						
+					}
+					.form-control.input-xlarge textarea{
+						height: 30px !important;
 					}
 					#recaptcha_area{
 						width: auto;
@@ -1912,10 +1935,21 @@ div#service{
 				/*background: url(images/homeslides/img2.png) no-repeat; */
 			}
 
+	/**********************************
+		Container for Downlad And Media  
+	**********************************/
+    #about-downloadmedia{
+    	width:1200px;
+		height: 270px;
+		margin: auto;
+		visibility:visible;
+		margin-top:20px;
+		position: relative;
+    }
 
-    
-
-
+    /**************************** 
+	   Container of partners Suppliers 
+    *****************************/
 	#content-lightings{
 		width:auto;
 		height: auto;
@@ -2727,6 +2761,43 @@ div#gallery{
 									
 								}
 
+		/***** Controls the Media page *****/
+			
+		#media{
+			margin: auto;
+			min-width: 1200px;
+		}
+			#media p{
+				margin: auto;
+				padding: 15px;
+				margin-top:20px;
+			}
+			
+			.media-title{
+				width: auto;
+		 		height: auto;
+		 		color: white;
+		 		margin-top:18px;
+		 		margin-right:12px;
+		 		margin-left: 20px;
+		 		text-align: left;
+		 		float: left;
+		 		font-size: 28px;
+		 		bottom: 30px;
+		 		font-weight: normal;
+		 		text-decoration: none;
+		 		font-family: "Century Gothic";
+			}
+			.mediapress-line{
+				width: 290px;
+				height: 2px;
+				top: 55px;
+				left: 20px;
+				position: relative;
+				background: #dd0a0a;
+			}
+
+
 
 
           	 /******** ||||||| ===== For controling the post image w/ description ===== ||||| ********/
@@ -2907,6 +2978,7 @@ div#footer{
 	max-width: 100%;
 	min-width: 100%;
 	min-height: 100%;
+	max-height: 100%;
 	position: fixed;
 	z-index: 1;
 }
@@ -2916,16 +2988,18 @@ div#footer{
 	max-height: 100%;
     z-index: -20;
     position: fixed;
+    max-width: 100%;
 }
 
 		
 .home-footer{
 	width: 100%;
 	height:auto;
-	position:absolute;
-	bottom: 0;
+	top:  auto;
+	position:relative;
 	color: #333 !important;
-	z-index: 9999;
+	visibility: hidden;
+	overflow: hidden;
 }
 .home-footer p {
  	color: #333 !important;
@@ -3172,6 +3246,13 @@ div#footer{
 		 		position: relative;
 	}
 
+
+.godaddy{
+	visibility: hidden;
+}
+
+
+
 /*******  End of Special Classes & Divs ********/
 
 /** END OF SPECIAL CLASSES AND DIV  **/ 
@@ -3269,7 +3350,7 @@ div#footer{
 			}
 
 			.download-1 {
-				background-color: #666a75;
+				background-color: #666a75;	
 				box-shadow: 0px 3px 0px 0px #3b3d44;
 			}
 			.download-1:hover {
@@ -3279,6 +3360,41 @@ div#footer{
 				box-shadow: 0px 1px 0px 0px #27292d;
 			}
 
+	.profile-download{
+		width:280px;
+		height:260px;
+		float: left;
+		background: url(images/border.png) no-repeat;
+	}
+			.profile-download a{
+				width:280px;
+				height:260px;
+				display: block;
+				background: url(images/company-profile.png) no-repeat;
+			}
+	.mediapress{
+		width:280px;
+		height:260px;
+		float: left;
+		margin-left: 155px;
+		padding-left: 5px;
+		background: url(images/border.png) no-repeat;
+	}
+	.mediapress a{
+		width:280px;
+		height:260px;
+		display: block;
+		position: relative;
+		background: url(images/media.png) no-repeat;
+	}
+			
+	.insideout-award{
+		width:280px;
+		height:260px;
+		float: right;
+		position: relative;
+		background: url(images/award.png) no-repeat;
+	}
 
 
   /* End of Special classes */

@@ -18,8 +18,8 @@
 
 
 <div class="cycle-slideshow" data-fx=scroll data-timeout=4000 data-scss='{"top":"20px"}'>
-    <img alt="framing in dubai" src="<?php bloginfo('template_directory'); ?>/images/bg1.png"/>
-   	<img alt="dubai lightings" src="<?php bloginfo('template_directory'); ?>/images/bg2.png"/>
+    <img alt="framing in dubai" src="<?php bloginfo('template_directory'); ?>/images/bg1.jpg"/>
+   	<img alt="dubai lightings" src="<?php bloginfo('template_directory'); ?>/images/bg2.jpg"/>
 	<img alt="dubai furnitures" src="<?php bloginfo('template_directory'); ?>/images/bg3.png"/>  
 	<img alt="dubai artworks" src="<?php bloginfo('template_directory'); ?>/images/bg4.png"/>
 </div>
@@ -144,9 +144,9 @@
 
 				</div> 
 
-
+				
 				<div class="home-footer"><?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?> </div>
-
+			
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -159,7 +159,7 @@
 </script>
 
 
-<div itemscope="itemscope" itemtype="http://schema.org/LocalBusiness">
+<div class="godaddy" itemscope="itemscope" itemtype="http://schema.org/LocalBusiness">
     <span itemprop="name">Four Seasons Ramesh Gallery</span>
     <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
         <span itemprop="streetAddress">8390, SW, 72 AVE, Apt 807, 33143 Miami, FL.</span>

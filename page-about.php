@@ -42,7 +42,7 @@
 												<?php endif; ?>
 
 									</div>
-											<a class="download download-1" type="button" value="Company Profile" href="http://fsrg.com/downloadfiles/CompanyProfile.pdf" target="_blank">Download Company Profile</a>
+											<!--a class="download download-1" type="button" value="Company Profile" href="http://fsrg.com/downloadfiles/CompanyProfile.pdf" target="_blank">Download Company Profile</a-->
 								</div>
 
 									
@@ -51,12 +51,20 @@
 
 				</div>
 
+				<div id="about-downloadmedia">
+							<div class="profile-download">
+									<a value="Company Profile" href="http://fsrg.com/downloadfiles/CompanyProfile.pdf" target="_blank"></a>
+							</div>
+							<div class="mediapress">
+									<a value="Company Profile" href="/press/" ></a>
+							</div>
+							<div class="insideout-award">
 
+							</div>
+				</div>
+										<div style="clear:both"></div>
 
 				<div id="content-lightings">
-
-									
-									
 
 									<div class="righ-light-frame">
 
