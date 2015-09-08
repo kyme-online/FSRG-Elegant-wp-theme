@@ -20,7 +20,7 @@
 <div class="cycle-slideshow" data-fx=scroll data-timeout=4000 data-scss='{"top":"20px"}'>
     <img alt="framing in dubai" src="<?php bloginfo('template_directory'); ?>/images/bg1.jpg"/>
    	<img alt="dubai lightings" src="<?php bloginfo('template_directory'); ?>/images/bg2.jpg"/>
-	<img alt="dubai furnitures" src="<?php bloginfo('template_directory'); ?>/images/bg3.png"/>  
+	<img alt="dubai furnitures" src="<?php bloginfo('template_directory'); ?>/images/bg3.jpg"/>  
 	<img alt="dubai artworks" src="<?php bloginfo('template_directory'); ?>/images/bg4.png"/>
 </div>
 	
