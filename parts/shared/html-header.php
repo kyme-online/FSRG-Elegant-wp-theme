@@ -19,8 +19,11 @@
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico"/>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> <!-- For full background effect -->
-		<script src="//malsup.github.com/jquery.cycle2.js"></script>
+		<script src="//malsup.github.com/jquery.cycle2.js"></script> <!-- <<< Dissable this if your uploading the page -->
 
+
+		<!-- include Cycle2 -->
+		<!--script src="/wp-content/themes/starkers-master/js/jquery.cycle2.js"> <<< Enable this when uploading to server </script--> 
 		
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW, ARCHIVE" /> <!-- GoDaddy Meta tags -->
 
