@@ -9,7 +9,6 @@
  	 * @since 		Starkers 4.0
 	 */
 
-	
 	/* ========================================================================================================================
 
 	Required external files
@@ -31,6 +30,9 @@
 	// register_nav_menus(array('primary' => 'Primary Navigation'));
 
 
+	//update_option('siteurl','https://www.fsrg.com');   TEMPORARY DISSABLE
+  //update_option('home','https://www.fsrg.com');
+
 
 	/* ========================================================================================================================
 
@@ -41,16 +43,6 @@
 	add_action( 'wp_enqueue_scripts', 'starkers_script_enqueuer' );
 
 	add_filter( 'body_class', array( 'Starkers_Utilities', 'add_slug_to_body_class' ) );
-
-	/* ============ Temporarily for modifying the http  =========
-	add_filter('site_url',  'wpadmin_filter', 10, 3);
- 	function wpadmin_filter( $url, $path, $orig_scheme ) {
-  	$old  = array( "/(wp-admin)/");
-  	$admin_dir = WP_ADMIN_DIR;
-  	$new  = array($admin_dir);
-  	return preg_replace( $old, $new, $url, 1);
- 	}
-*/
 
 	/* ========================================================================================================================
 

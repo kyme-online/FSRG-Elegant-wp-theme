@@ -563,7 +563,7 @@ margin-bottom: 40px;
 						left : 10px;
 						text-align: left;
 						margin-bottom: 5px;
-						color: white !important;
+						
 						font: 12px !important;
 						font-family: Arial,Helvetica,sans-serif;
 					}
@@ -572,7 +572,7 @@ margin-bottom: 40px;
 						color: #494949 !important;
 					}
 					.form-control label *{
-						color: blue;
+						color: white !important;
 						height: auto !important;
 					}
 					.cscfForm p{;
@@ -582,9 +582,18 @@ margin-bottom: 40px;
 						margin-bottom: 20px !important;
 						margin-left: -2px !important;
 						float: left !important;
-						color: white;
+						color: white !important;
 						
 					}
+
+
+					.form-control.input-xlarge textarea {
+						width: 100%;
+						height: 30px !important;
+						right: 10px;
+						color: black !important;
+					}
+				
 
 					#recaptcha_area{
 						width: auto;
@@ -1349,7 +1358,7 @@ div#right{
 							font-size: 12px;
 						}
 					.cscfForm *{ 	/* CONTROLS THE FONT OF CONTACT FORM */
-						color: #494949;
+						
 						font: 12px !important;
 						font-family: Arial,Helvetica,sans-serif;
 					}
@@ -1960,7 +1969,7 @@ div#service{
 		overflow: hidden;
 	}
 
-		.right-light-frame{
+		.center-frame{
 			width: auto;
 			height: auto;
 			margin: auto;
@@ -1969,7 +1978,7 @@ div#service{
 			margin-right: 5px;
 			display: block;
 			position: relative;
-			background: green;
+			background: none;
 			}
 		
 			.rightcontent{
@@ -3251,6 +3260,19 @@ div#footer{
 	visibility: hidden;
 }
 
+/*** Controlling the Center Banners in About Us Page ***/
+.banner-img{
+	width: 1300px;
+	height: auto;
+	margin: 0 auto;
+	background: none;
+}
+
+		/* Controlling FourseasonsFineArt Banner from About Us */
+		.fineart{
+			margin-left:10px;
+			float:left;
+		}
 
 
 /*******  End of Special Classes & Divs ********/

@@ -66,17 +66,20 @@
 
 				<div id="content-lightings">
 
-									<div class="righ-light-frame">
+									<div class="center-frame">
 
 											<div class="header-partners"></div>
 				 
-														<div class="right-light-img">
+														<div class="banner-img">
 
 															<a href="http://troy-lighting.com" target="_blank" ><img  alt="dubai lightings" src="<?php echo get_template_directory_uri().'/images/troy.png'; ?>" /></a> 
 															<a href="http://corbettlighting.com" target="_blank"  ><img alt="dubai framing" src="<?php echo get_template_directory_uri().'/images/corbet.png'; ?>" /></a>
 															<a href="http://fineartlamps.com/" target="_blank" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/finearts.png'; ?>" /></a>
 															<a href="http://sonnemanawayoflight.com/" target="_blank" ><img alt="dubai accent furnitures" src="<?php echo get_template_directory_uri().'/images/sonneman.png'; ?>" /></a>
 															<a href="http://alineahome.com/" target="_blank" ><img alt="dubai history photograph" src="<?php echo get_template_directory_uri().'/images/alinea.png'; ?>" /></a>
+														</div>
+														<div class="banner-img">
+																<a href="http://fourseasonsfineart.com/" target="_blank" ><img class="fineart" alt="dubai history photograph" src="<?php echo get_template_directory_uri().'/images/fineart.png'; ?>" /></a>
 														</div>
 
 

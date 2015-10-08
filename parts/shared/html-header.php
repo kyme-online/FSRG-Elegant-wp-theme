@@ -19,15 +19,9 @@
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico"/>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> <!-- For full background effect -->
-		<script src="//malsup.github.com/jquery.cycle2.js"></script> <!-- DISSABLE THIS LINE IF FILE IS UPLOADED -->
+		<script src="//malsup.github.com/jquery.cycle2.js"></script>
 
-
-		<!-- PLEASE ENABLE THIS LINE BEFORE UPLOADING TO SERVER -include Cycle2 -->
-		<!--script src="/wp-content/themes/starkers-master/js/jquery.cycle2.js"></script-->
-		<!-- include one or more optional Cycle2 plugins -->
-		<!--script src="/wp-content/themes/starkers-master/js/jquery.cycle2.carousel.js"></script-->
-
-
+		
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW, ARCHIVE" /> <!-- GoDaddy Meta tags -->
 
 		<?php wp_head(); ?>
