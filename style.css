@@ -123,6 +123,7 @@ margin-bottom: 40px;
 
 		body{ 
 		max-width: 100% !important;
+		min-width: auto !important;
 		height: auto;
 		margin: auto;
 		text-align: center;
@@ -161,12 +162,14 @@ margin-bottom: 40px;
 		display: none !important; 
 	}
 	#bgstyle{
-		display: none !important;
+	display: none !important;
 	}	
 	#container{
 		display: none !important;
 	} 
-
+	#header{
+		display: none !important;
+	}
 	div#header a{
 		display: none !important;
 
@@ -209,7 +212,7 @@ margin-bottom: 40px;
 		}	
 
 			.mobilemenus{
-				width: 100%;
+				width: 100% !important;
 				height: auto;
 				display: block;
 				z-index: -9999;
@@ -217,7 +220,7 @@ margin-bottom: 40px;
 				background: #a1a1a1;
 			}
 				.mobilemenus li {
-					width: 100%;
+					width: 100% !important;
 					height: 40px;
 					text-align: center;
 					list-style-type: none;
@@ -627,18 +630,80 @@ margin-bottom: 40px;
 
 }
 
+/************************************
+     For iPad Control 
+*************************************/
 
-@media only screen and (max-width: 1024px) {  /** FOR iPAD layout **/
 
-#bg-body{
+@media only screen  and (min-width: 761px)  and (max-width: 1224px), only screen and (device-width: 768px) {   
+
+body {
+min-width: auto !important;
 }
 
-div#upper_nav{
-	width:1200px;	
-	height: 55px;
+div#bgstyle{
+   margin: auto;   
+   height:30px;   
+   width:100%;
+   min-width: 1200px;
+   background: black; 
+   position:absolute;
+}
+div#container{
+	height:auto;
+	margin: auto;	
+	width:100%;	
+	background: none;
+	
+}
+div#header{
+	width:100%;
+	top: 30px;
+	min-width: 1200px;
+	position: relative;
+	margin-bottom: 35px;
+	background: url(images/menubg.png);
+
+}
+	.fixmenu{
+		
+	}
+	.fixmenu-mobile{
 	}
 
-		#sddm
+div#upper_nav{
+	max-width: 100%;
+	height: 55px;
+	overflow: auto;
+	}
+
+#logo{ 
+	width: 115px;
+	height: 50px;
+	z-index: 1;
+	position: relative;
+	float: left;
+ 	/*background-image: url(images/btnbg.png);
+ 	background-position: right;
+ 	background-repeat: no-repeat;*/
+ 	display: block; 
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+#logo a{
+	width: 115px;
+	height: 50px;
+	
+	display: block;
+	background: url(images/logo.png);
+}
+#logo a:hover{
+	width: 118px;
+	height: 50px;
+	display: block;
+	background: url(images/logo-hover.png);
+}
+
+	#sddm
 {	
 	
 	margin: 0;
@@ -666,28 +731,27 @@ div#upper_nav{
 #sddm li:last-child{
 	background: none;
 }
-a.btn{   /* Puts the btn at middle  */
-	width: 130px;
+#sddm li a.btn{   /* Puts the btn at middle  */
+	width: auto !important;
 	height: 50px !important;
 	padding-top: 18px !important;
 	font: 12px arial !important;
 }
-.btn-temp{   /* Arrange the services-Aboutus-Contacts */
-	width: 130px;
+#sddm li a.btn-temp{   /* Arrange the services-Aboutus-Contacts */
+	width: auto !important;
 	
 	padding-top: 18px !important;
 }
 
-
+   /*** Submenu Starts Here ***/
 #sddm li a
 {	
-	
 	
 	position: relative;
 	display: block;
 	margin: 0 1px 0 0;
 	padding: 4px 10px;
-	width: 130px;
+	width: 115px;
 	color: #333333;
 	text-align: center;
 	text-decoration: none;
@@ -747,8 +811,8 @@ transition: background-color 200ms,400ms;
 
 #sddm .submenu-wrap {
 	display: block;
-	height:130px;
-	width: 300px !important;
+	height:50px !important;
+	width: auto !important;
 	margin: 0 auto;
 	padding-top: 40px;
 	background: none;
@@ -758,40 +822,106 @@ transition: background-color 200ms,400ms;
 	background: white;
 }
 
-#m1 .submenu-wrap {
+.linktext-menu{
+		width: auto;
+		height: 30px !important;
+		margin: auto;
+		top:5px!important;
+		
+		position: relative;
+	}
+		/* sets distance from left & aliignment class for Submenu */
+		.alignmentbtn1 {
+			width: 100px;
+			height: 65px;
+			top:-80px; 
+			
+			}
+		.alignmentbtn2{
+			width: 100px;
+			height: 65px;
+			top:-80px;
+			background: url(images/submenubg.png) repeat-x;
+		}
+		.alignmentbtn3{
+			width: 100px;
+			height: 65px;
+			top: -80px;
+		}
+		.alignmentbtn4{
+			width: 100px;
+			height: 65px;
+			top:-80px;
+			background: url(images/submenubg.png) repeat-x;
+			}
+		.alignmentbtn5{
+			width: 100px;
+			height: 65px;
+			top:-80px;
+			background: url(images/submenubg.png) repeat-x;
+		}
+		.alignmentbtn6{
+			width: 100px;
+			height: 65px;
+			top:-80px;
+			background: url(images/submenubg.png) repeat-x;
+		}
+		.alignmentbtn7{
+			width: 100px;
+			height: 65px;
+			top:-80px;
+		}
+		.alignmentbtn8{
+			width: 100px;
+			height: 65px;
+			top: -80px;
+			background: url(images/submenubg.png) repeat-x;
+		}  
+
+#m1 .submenu-wrap {           /* Furniture btn  */
 	display: block;
 	width: auto !important;
 	float:left;
-	margin-left:119px;   
+	margin-left:115px;   
 	padding-top: 20px;
 	background: #f3f3f8 url(images/bg-noise.png);
 	-moz-box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	-webkit-box-shadow:3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 }
-#m2 .submenu-wrap {
+#m2 .submenu-wrap {         /* Accessories btn */
 	display: block;
-	width: 610px !important;
+	width: 534px !important;
 	float:left;
-	margin-left:273px;
+	margin-left:210px !important;
 	padding-top: 20px;
 	background: #f3f3f8 url(images/bg-noise.png);
 	-moz-box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	-webkit-box-shadow:3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 }
- #m3 .submenu-wrap {
+ #m3 .submenu-wrap {        /* Seasons Btn */
 	display: block;
-	width: 305px !important;
+	width: 130px !important;
 	float:left;
-	margin-left: 425px;
+	margin-left: 384px;
 	padding-top: 20px;
 	background: #f3f3f8 url(images/bg-noise.png);
 	-moz-box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	-webkit-box-shadow:3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 }
-
+#m4 .submenu-wrap {        /* Photography btn */
+	display: block;
+	width: 268px !important;
+	float:left;
+	margin-left: 515px;
+	padding-top: 20px;
+	background: #f3f3f8 url(images/bg-noise.png);
+	-moz-box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
+	-webkit-box-shadow:3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
+	box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
+}
 
 #sddm .submenu-content { 
 	display: block;
@@ -808,7 +938,7 @@ transition: background-color 200ms,400ms;
 		.bgsubmenu{
 		/*	width: 49.7% !important; */
 			margin-bottom:20px !important;
-			background: url(images/dropdown-bar.png) no-repeat 100% 10%; 
+			background: none !important;
 		}
 
 #sddm .submenu-item a {
@@ -819,21 +949,293 @@ transition: background-color 200ms,400ms;
 	left: auto !important;
 	display: block;
 	float: none !important;
-	width: 153px !important;
+	width: 120px !important;
 
 }
 	.imagesubmenu{
-		width: 100px; 
-		height: 100px;
-		margin: auto;
-		float:left;
-		margin-top: -10px;
-		margin-left: 25px;
-		
+		display: none !important;
 	}
+
+#homecontent{
+	z-index: 999;
+}
+
+.body-mobile{
+			visibility: visible !important;
+			z-index: 999px;
+			margin-top: 50px;
+			display: none !important;
+		}	
+	.mobilemenus{
+		width: 100%;
+		height: auto;
+		display: block;
+		z-index: -9999;
+		text-align: center; 
+	}
+		.mobilemenus li {
+					width: 300px;
+					height: 40px;
+					text-align: center;
+					list-style-type: none;
+					background: url(images/menubg-mobile.png) repeat-x;
+				}
+				.mobilemenus li a {
+					width: 100%;
+					height: 40px;
+					color: white;
+					font-size: 1em;
+					line-height: 40px;
+					text-align: center;
+					display: block;
+					text-decoration: none;
+					display: visible !important;
+					font-family: Arial,Helvetica,sans-serif;
+				}
+
+.tcycle{
+	width: auto;
+	height: auto; 
+	margin: auto;
+	margin: auto;
+}
+.tcycle img{
+    z-index: -9999;
+}
+
+.cycle-slideshow{  /* For Fade Image effect */
+	width: auto;
+	height: auto; 
+	margin: auto;	
+	max-width: 1200px;
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 1;
+	margin-bottom: -60px;
+}
+.cycle-slideshow img{
+	min-width:100%;
+    z-index: -20;
+    max-width: 100%;
+}
+
+        .home-mobile{
+        	width:100%;
+        	padding-top: 30px;
+        	padding-bottom: 10px;
+        	background: url(images/ipad-bg.png);
+        }
+
+		            .homemobile-line{
+					max-width: 200px;
+					height: 2px;
+					top: 25px;
+					margin-bottom: 5px;
+					margin-left: 10px;
+					position: relative;
+					background: #dd0a0a;
+				}
+
+				#mobile-about{
+					width: 100%;
+					height:auto;
+					margin: auto;
+					margin-bottom: 50px; 
+				}			
+						#mobile-about h1 {
+							width: 	auto;
+							height: auto;
+							right: 0;
+							margin: auto;
+							float: left;
+							bottom: 5px;
+							margin-left: 10px;
+							text-align: left;
+							text-decoration: none;
+							color: white;
+							font-size: 14px;
+							position: relative;
+							font-family: Arial,Helvetica,sans-serif bold;
+						}
+								
+						#mobile-about p{
+							max-width: auto;
+							height: auto;
+							color:white;
+							margin: auto;
+							margin-left: 10px;
+							margin-right: 10px;
+							font-size:12px;
+							margin-top: 30px;
+							text-align: left;
+							font-family: Arial,Helvetica,sans-serif;
+						}
+						#mobile-about img{
+							max-width: 100%;
+							height: auto;
+
+						}
+		#mobile-service{
+			display: none;
+		}
+		#mobile-partners{
+			display: none;
+		}
+
+div#gallery{
+	max-width: 1270px;
+	min-width: auto !important;
+	height: auto;
+	left:0;
+	right:0;
+	margin:auto;
+	margin-top:20px;
+	color: white;
+	position: relative;
+	
+	}
+		div#gallery-content{
+		width: auto;
+		height: auto;
+		left:0;
+		right:0;
+		margin:auto;
+		
+		bottom: 20px;
+		color: white;
+		position: relative;
+
+	}
+
+	.item {
+			width: 200px;
+			height: 250px;
+			float: left;
+			margin-top:25px;
+			margin-left:5px;
+			margin-right:5px;
+			display: block;
+			position: relative;
+		}
+		
+		#item a{
+			width: 150px;
+			height: 150px;
+			color: black;
+			display: block;
+			position: relative;
+			border-style:solid;
+			border-color: black;
+			border-width:1px;
+			text-decoration: none;
+			
+		}
+			.item p{
+			width:150px;
+			height:auto;
+			margin: auto;
+			background: #dcdce1;
+			margin-top:-40px;
+			color: black;
+			z-index: 999;
+			text-decoration:none;
+			}
+				.item p a{
+					font: 12px arial;
+					color: black;
+					text-decoration: none;
+				}
+					.item p a:hover{
+						font: 12px arial;
+						color: red;
+						text-decoration: none;
+					}
+
+				div#livingroom{
+						max-width: 1200px;
+						height: auto;
+						min-width: auto !important;
+						right: 0;
+						left: 0;
+						top:30px;
+						margin: auto;
+						color: #5f5f5f;
+						position: relative;
+				}
+					
+						#livingroom a{
+							width: auto;
+							height: auto;
+							left: 0;
+							right: 0;
+							margin: auto;
+							text-align: center;
+							text-decoration: none;
+							color: white;
+							font-size: 14px;
+							position: absolute;
+							font-family: Arial,Helvetica,sans-serif;
+						}
+						#livingroom h1{
+							display: none;
+						}
+
+								.accentfurniture-line{
+									display: none;
+								}
+
+						#livingroom h2{
+							width: auto;
+							height: auto;		
+							
+							text-decoration: none;
+							color: white;
+							font-size: 14px;
+							position: relative;
+							font-family: Arial,Helvetica,sans-serif;
+						}
+
+
+						#livingroom p{
+						width: auto;
+							height: auto;
+							margin: auto;
+							font-size:14px;
+							margin-top: 30px;
+							text-align: left;
+							font-family: Arial,Helvetica,sans-serif;
+						}
+
+								.livingroom-img1{
+									width: 180px;
+									height: 315px;
+									float: left;
+									margin-left: 20px;
+									position: relative;
+								}
+								.livingroom-img2{
+									width: 180px;
+									height: 315px;
+									float: right;
+									margin-right: 30px;
+									top:30px;
+									position: relative;
+								}
+								.livingroom-img3{
+									width: 180px;
+									height: 315px;
+									top: 140px;
+									margin-left: 230px;
+									position: absolute;
+									
+								}		
+
 
 
 }
+
+
 
 
 /*********************************************
@@ -842,6 +1244,7 @@ transition: background-color 200ms,400ms;
 body{
 	width: auto;
 	height: auto;
+	min-width: 1200px;
 	margin: auto;
 	text-align: center;
 	background: url(images/bg.png);
@@ -849,7 +1252,7 @@ body{
 
 #bg-body {
     background: none repeat scroll 0 0 #D2D2D0;
-   height: auto;
+    height: auto;
     left: -50%;
     position: fixed;
     top: -50%;
@@ -870,7 +1273,6 @@ body{
  div#wholebody{
 	margin: auto;
 	width: 100%;
-	
 	height:auto;
 	background: none;
 	
@@ -879,7 +1281,7 @@ div#bgstyle{
    margin: auto;   
    height:30px;   
    width:100%;
-   
+   min-width: auto;
    background: black; 
    position:absolute;
 }
@@ -893,6 +1295,7 @@ div#container{
 div#header{
 	width:100%;
 	top: 30px;
+	min-width: 1200px;
 	position: relative;
 	margin-bottom: 35px;
 	background: url(images/menubg.png);
@@ -909,12 +1312,13 @@ div#header{
 	}
 
 div#upper_nav{
-	width:1200px;	
+	max-width: 100%;
 	height: 55px;
+	overflow: auto;
 	}
 
 #logo{ 
-	width: 118px;
+	width: 115px;
 	height: 50px;
 	z-index: 1;
 	position: relative;
@@ -926,7 +1330,7 @@ div#upper_nav{
 	border-right: 1px solid rgba(0,0,0,0.2);
 }
 #logo a{
-	width: 118px;
+	width: 115px;
 	height: 50px;
 	
 	display: block;
@@ -968,27 +1372,26 @@ div#upper_nav{
 	background: none;
 }
 #sddm li a.btn{   /* Puts the btn at middle  */
-	width: 130px;
+	width: 110px;
 	height: 50px !important;
 	padding-top: 18px !important;
 	font: 12px arial !important;
 }
 #sddm li a.btn-temp{   /* Arrange the services-Aboutus-Contacts */
-	width: 130px;
+	width: 110px;
 	
 	padding-top: 18px !important;
 }
 
-
+   /*** Submenu Starts Here ***/
 #sddm li a
 {	
-	
 	
 	position: relative;
 	display: block;
 	margin: 0 1px 0 0;
 	padding: 4px 10px;
-	width: 130px;
+	width: 115px;
 	color: #333333;
 	text-align: center;
 	text-decoration: none;
@@ -1049,7 +1452,7 @@ transition: background-color 200ms,400ms;
 #sddm .submenu-wrap {
 	display: block;
 	height:130px;
-	width: 300px !important;
+	width: 200px !important;
 	margin: 0 auto;
 	padding-top: 40px;
 	background: none;
@@ -1059,40 +1462,50 @@ transition: background-color 200ms,400ms;
 	background: white;
 }
 
-#m1 .submenu-wrap {
+#m1 .submenu-wrap {           /* Furniture btn  */
 	display: block;
 	width: auto !important;
 	float:left;
-	margin-left:119px;   
+	margin-left:115px;   
 	padding-top: 20px;
 	background: #f3f3f8 url(images/bg-noise.png);
 	-moz-box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	-webkit-box-shadow:3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 }
-#m2 .submenu-wrap {
+#m2 .submenu-wrap {         /* Accessories btn */
 	display: block;
-	width: 610px !important;
+	width: 534px !important;
 	float:left;
-	margin-left:273px;
+	margin-left:249px;
 	padding-top: 20px;
 	background: #f3f3f8 url(images/bg-noise.png);
 	-moz-box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	-webkit-box-shadow:3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 }
- #m3 .submenu-wrap {
+ #m3 .submenu-wrap {        /* Seasons Btn */
 	display: block;
-	width: 305px !important;
+	width: 130px !important;
 	float:left;
-	margin-left: 425px;
+	margin-left: 384px;
 	padding-top: 20px;
 	background: #f3f3f8 url(images/bg-noise.png);
 	-moz-box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	-webkit-box-shadow:3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 	box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
 }
-
+#m4 .submenu-wrap {        /* Photography btn */
+	display: block;
+	width: 268px !important;
+	float:left;
+	margin-left: 515px;
+	padding-top: 20px;
+	background: #f3f3f8 url(images/bg-noise.png);
+	-moz-box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
+	-webkit-box-shadow:3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
+	box-shadow: 3px 2px 2px -3px #999, 3px 2px 2px -3px #999, -3px 2px 2px -3px #999;
+}
 
 #sddm .submenu-content { 
 	display: block;
@@ -1120,7 +1533,7 @@ transition: background-color 200ms,400ms;
 	left: auto !important;
 	display: block;
 	float: none !important;
-	width: 153px !important;
+	width: 134px !important;
 
 }
 	.imagesubmenu{
@@ -1428,6 +1841,14 @@ div#homecontent{
 					.mobilebtns {
 						
 					}
+		.bodyipad{
+			visibility: hidden;
+
+		}
+			.ipadmenus{
+
+			}
+
 
 /********************************************************/
 
@@ -2953,8 +3374,11 @@ div#footer{
 	}
 
 
-/****** |||||||||| SPECIAL STYLE  DIV & Class |||||||||||  **********/
-
+/**************************************************** 
+   
+   |||||||||| SPECIAL STYLE  DIV & Class |||||||||||  
+ 
+ ****************************************************/
 
 .headerline{
 	width: 400px;
@@ -2967,36 +3391,27 @@ div#footer{
 	width: auto;
 	height: auto; 
 	margin: auto;
-	max-width: 100%;
-	min-width: 100%;
-	min-height: 100%;
-	position: fixed;
+	margin: auto;
 }
 .tcycle img{
-	min-width:100%;
-	min-height: 100%;
-	max-height: 100%;
-    z-index: -20;
-    position: fixed;
+    z-index: 9999;
 }
 
 .cycle-slideshow{  /* For Fade Image effect */
 	width: auto;
 	height: auto; 
-	margin: auto;
-	max-width: 100%;
+	margin: auto;	
+	max-width: 1200px;
+	position: fixed;
 	min-width: 100%;
 	min-height: 100%;
-	max-height: 100%;
-	position: fixed;
+	position: relative;
 	z-index: 1;
+	margin-bottom: -60px;
 }
 .cycle-slideshow img{
 	min-width:100%;
-	min-height: 100%;
-	max-height: 100%;
     z-index: -20;
-    position: fixed;
     max-width: 100%;
 }
 
@@ -3009,6 +3424,7 @@ div#footer{
 	color: #333 !important;
 	visibility: hidden;
 	overflow: hidden;
+	display: none;
 }
 .home-footer p {
  	color: #333 !important;

@@ -21,10 +21,10 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> <!-- For full background effect -->
 		<script src="//malsup.github.com/jquery.cycle2.js"></script> <!-- <<< Dissable this if your uploading the page -->
 
-
 		<!-- include Cycle2 -->
-		<!--script src="/wp-content/themes/starkers-master/js/jquery.cycle2.js"> <<< Enable this when uploading to server </script--> 
+		<script src="/wp-content/themes/starkers-master/js/jquery.cycle2.js">   </script> 
 		
+	
 		<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW, ARCHIVE" /> <!-- GoDaddy Meta tags -->
 
 		<?php wp_head(); ?>
@@ -119,8 +119,21 @@
 										</div>
 									</li>
 
+									<li><a href="/seasons/" class="dropdown navlink btn">SEASONS</a>
+											<!--div id="m3" class="submenu">
+											 <span class="submenu-wrap">
+												<span class="submenu-content">
+													<span class="submenu-item "><img class="imagesubmenu" src="<! REMOVE THIS APOSTRPHE IF ENABLE ?php echo get_template_directory_uri().'/images/seasons-subpage.png'; ?>" /><a href="/vases/" class="alignmentbtn3"><div class="linktext-menu">SEASONS</div></a></span>
+													
+												</span>
+											</span>
+										</div -->
+									</li>
+
+
+
 									<li><a href="" class="dropdown navlink btn" id="dropdown_one">PHOTOGRAPHY</a>
-										<div id="m3" class="submenu">
+										<div id="m4" class="submenu">
 											<span class="submenu-wrap">
 												<span class="submenu-content">
 													<span class="submenu-item bgsubmenu"><img class="imagesubmenu" src="<?php echo get_template_directory_uri().'/images/photography-subpage.png'; ?>" /><a href="/artistic/" class="alignmentbtn7"><div class="linktext-menu">ARTISTIC</div></a></span>

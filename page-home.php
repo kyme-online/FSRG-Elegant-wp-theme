@@ -21,11 +21,15 @@
     <img alt="framing in dubai" src="<?php bloginfo('template_directory'); ?>/images/bg1.jpg"/>
    	<img alt="dubai lightings" src="<?php bloginfo('template_directory'); ?>/images/bg2.jpg"/>
 	<img alt="dubai furnitures" src="<?php bloginfo('template_directory'); ?>/images/bg3.jpg"/>  
-	<img alt="dubai artworks" src="<?php bloginfo('template_directory'); ?>/images/bg4.png"/>
+	<img alt="dubai artworks" src="<?php bloginfo('template_directory'); ?>/images/bg5.jpg"/>
 </div>
-	
-	
 
+	<!-- Snow Effects, ENABLE THIS IF NEEDED >
+	<script> 
+		$(document).ready( function(){
+		    $.fn.snow();
+		});
+	</script-->	
 				<div id="homecontent">
 
 						<div class="body-mobile">
@@ -33,6 +37,7 @@
 							<div class="mobilemenus">
 										<li><a href="mobile-furniture-page/">Furniture</a>   </li>
 										<li><a href="mobile-accessories-page/">Accessories</a> </li>
+										<li><a href="mobile-photography-page/">Seasons</a> </li>
 										<li><a href="mobile-photography-page/">Photography</a> </li>
 										<li><a href="http://fsrg.com/blog/">Blog</a> </li>
 										<li><a href="mobile-contact-page/">Contact Us</a>  </li>
@@ -105,6 +110,7 @@
 
 						</div>
 					
+
 						<div id="homebodycontent">
 										
 									
