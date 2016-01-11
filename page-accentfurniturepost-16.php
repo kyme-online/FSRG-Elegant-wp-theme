@@ -31,7 +31,7 @@
 
 
 									<div id="contentpost-img">                                           
-										<img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FT-11230.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FT-11230.jpg'; ?>" />							
 
 									
 									</div>

@@ -22,14 +22,14 @@
 						<!--div class="subpageline"></div-->
 					</div>
 
-					<a href="/vases/" class="back"><img class="back" src="<?php echo get_template_directory_uri().'/images/back.png'; ?>" /></a>
+					<a href="/Vases/" class="back"><img class="back" src="<?php echo get_template_directory_uri().'/images/back.png'; ?>" /></a>
 
 				</div>
 
 				<div id="content-post">
 
 									<div id="contentpost-img">                                           
-										<img alt="vase" src="<?php echo get_template_directory_uri().'/images/vases/JRA-9236.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/vases/JRA-8354.jpg'; ?>" />							
 
 									
 									</div>
@@ -37,25 +37,17 @@
 								
 
 									<div id="contentpost-content">
-													<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
+										<h1>Vase</h1>
+											
+				 						<p>
+											<b>JRA-8354</b><br/><br/>
+											Size: <br/> 
+											Width:   95" <br/> 
+											Height:  95" <br/> <br/>
+											Diameter Cased Glass Vase In Royal Blue.
+				 						</p>
 
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
-
-									</div>
+									     </div>
 
 							     	
 

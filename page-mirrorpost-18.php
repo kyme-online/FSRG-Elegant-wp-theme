@@ -29,7 +29,7 @@
 				<div id="content-post">
 
 									<div id="contentpost-img">                                           
-										<img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/Renaissance-m-14150.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/mirror/Renaissance-m-14150.jpg'; ?>" />							
 
 									
 									</div>
@@ -37,23 +37,18 @@
 								
 
 									<div id="contentpost-content">
-														<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
+										<h1>Mirror</h1>
+											
+				 						<p>
+											<b>Renaissance-m-14150</b><br/><br/>
+											
+											Size: <br/> <br/>
+											A:	27W x 39H x 4D in  |  69W x 99H x 10D cm<br/>
+											B:	32W x 46H x 4D in  |  81W x 117H x 10D cm<br/>
+											C:  37W x 53H x 4D in  |  94W x 135H x 10D cm<br/>
+											D:  41W x 60H x 4D in  |  105W x 152H x 10D cm
+											
+				 						</p>
 
 									     </div>
 

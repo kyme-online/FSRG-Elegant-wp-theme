@@ -49,53 +49,51 @@
 									</div>
 
 
-									<div id="mirror">
-														<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<!--a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a><br/--!> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
-									</div>	
-
 										<div id="paging_container3" class="container">
 											
 												<ul class="alt_content">
 
 													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
 																 <div class="gallery-images">
-																	<div class="item"><a href="/mirrorpost-1/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/bliss-m-11010-small.png'; ?>"/></a><p><a href="/mirrorpost-1/">Bliss-m-11010</a></p></div>           
-																	<div class="item"><a href="/mirrorpost-2/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/regattaII-M-11041-small.png'; ?>"/></a><p><a href="/mirrorpost-2/">Regatta II-M-11041</a></p></div> 
-																	<div class="item"><a href="/mirrorpost-3/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/fusion-m-11050-small.png'; ?>"/></a><p><a href="/mirrorpost-3/">Fusion-m-11050</a></p></div> 
-																	<div class="item"><a href="/mirrorpost-4/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/vera-m-11151-small.png'; ?>"/></a><p><a href="/mirrorpost-4/">Vera-m-11151</a></p></div> 
-																	<div class="item"><a href="/mirrorpost-5/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/tori-l-m-11190-small.png'; ?>"/></a><p><a href="/mirrorpost-5/">Tori l-m-11190</a></p></div>           
-																	<div class="item"><a href="/mirrorpost-6/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/sienna-m-11231-small.png'; ?>"/></a><p><a href="/mirrorpost-6/">Sienna-m-11231</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-1/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/bliss-m-11010-small.png'; ?>"/></a><p><a href="/mirrorpost-1/">Bliss-m-11010</a></p></div>           
+																	<div class="item"><a href="/mirrorpost-2/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/regattaII-M-11041-small.png'; ?>"/></a><p><a href="/mirrorpost-2/">Regatta II-M-11041</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-3/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/fusion-m-11050-small.png'; ?>"/></a><p><a href="/mirrorpost-3/">Fusion-m-11050</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-4/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/vera-m-11151-small.png'; ?>"/></a><p><a href="/mirrorpost-4/">Vera-m-11151</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-5/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/tori-l-m-11190-small.png'; ?>"/></a><p><a href="/mirrorpost-5/">Tori l-m-11190</a></p></div>           
+																	<div class="item"><a href="/mirrorepost-6/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/sienna-m-11231-small.png'; ?>"/></a><p><a href="/mirrorpost-6/">Sienna-m-11231</a></p></div> 
 																</div>
 													</p></li>
 
 													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
 																 <div class="gallery-images">
-																	<div class="item"><a href="/mirrorpost-7/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/pompeii-m-11350-small.png'; ?>"/></a><p><a href="/mirrorpost-7/">Pompeii-m-11350</a></p></div>           
-																	<div class="item"><a href="/mirrorpost-8/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/mesa-ll-m-13112-small.png'; ?>"/></a><p><a href="/accentfurniturepost-8/">Mesa-ll-m-13112</a></p></div> 
-																	<div class="item"><a href="/mirrorpost-9/" ><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/soleil-m-14380-small.png'; ?>"/></a><p><a href="/mirrorpost-9/">Soleil-m-14380</a></p></div> 
-																	<div class="item"><a href="/mirrorpost-10/"><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/bacall-m-14391-small.png'; ?>"/></a><p><a href="/mirrorpost-10/">Bacall-m-14391</a></p></div> 
-																	<div class="item"><a href="/mirrorpost-11/"><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/miranda-m-14401-small.png'; ?>"/></a><p><a href="/mirrorpost-11/">Miranda-m-14401</a></p></div>           
-																	<div class="item"><a href="/mirrorpost-12/"><img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/casablanca-m-14405-small.png'; ?>"/></a><p><a href="/mirrorpost-12/">Casablanca-m-14405</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-7/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/pompeii-m-11350-small.png'; ?>"/></a><p><a href="/mirrorpost-7/">Pompeii-m-11350</a></p></div>           
+																	<div class="item"><a href="/mirrorpost-8/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/mesa-ll-m-13112-small.png'; ?>"/></a><p><a href="/accentfurniturepost-8/">Mesa-ll-m-13112</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-9/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/soleil-m-14380-small.png'; ?>"/></a><p><a href="/mirrorpost-9/">Soleil-m-14380</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-10/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/bacall-m-14391-small.png'; ?>"/></a><p><a href="/mirrorpost-10/">Bacall-m-14391</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-11/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/miranda-m-14401-small.png'; ?>"/></a><p><a href="/mirrorpost-11/">Miranda-m-14401</a></p></div>           
+																	<div class="item"><a href="/mirrorpost-12/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/casablanca-m-14405-small.png'; ?>"/></a><p><a href="/mirrorpost-12/">Casablanca-m-14405</a></p></div> 
 																</div>
 													</p></li>
 												
-												
+													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
+																 <div class="gallery-images">
+																	<div class="item"><a href="/mirrorpost-13/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/dubai-m-14407-small.png'; ?>"/></a><p><a href="/accentfurniturepost-13/">Dubai-m-14407</a></p></div>           
+																	<div class="item"><a href="/mirrorpost-14/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/empress-m-15060-small.png'; ?>"/></a><p><a href="/mirrorpost-14/">Empress-m-15060</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-15/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/birlliant-m-15230-small.png'; ?>"/></a><p><a href="/mirrorpost-15/">Birlliant-m-15230</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-16/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/random-m-15250-small.png'; ?>"/></a><p><a href="/mirrorpost-16/">Random-m-15250</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-17/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/diana-m-15470-small.png'; ?>"/></a><p><a href="/mirrorpost-17/">Diana-m-15470</a></p></div>           
+																	<div class="item"><a href="/mirrorpost-18/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/renaissance-m-14150-small.png'; ?>"/></a><p><a href="/mirrorpost-18/">Renaissance-m-14150</a></p></div> 
+																</div>
+													</p></li>
+
+													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
+																 <div class="gallery-images">
+																	<div class="item"><a href="/mirrorpost-19/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/Lorna-m-11065-small.png'; ?>"/></a><p><a href="/mirrorpost-19/">Lorna-m-11065</a></p></div>           
+																	<div class="item"><a href="/mirrorpost-20/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/Blane-m-11085-small.png'; ?>"/></a><p><a href="/mirrorpost-20/">Blane-m-11085</a></p></div> 
+																	<div class="item"><a href="/mirrorpost-21/" ><img src="<?php echo get_template_directory_uri().'/images/mirror/Zoey-l-m-12052-small.png'; ?>"/></a><p><a href="/mirrorpost-21/">Zoey-l-m-12052</a></p></div> 
+																	
+																</div>
+													</p></li>
 												
 												</ul>
 

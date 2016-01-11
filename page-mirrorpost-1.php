@@ -29,7 +29,7 @@
 				<div id="content-post">
 
 									<div id="contentpost-img">                                           
-										<img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/bliss-m-11010.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/mirror/bliss-m-11010.jpg'; ?>" />							
 
 									
 									</div>
@@ -37,23 +37,19 @@
 								
 
 									<div id="contentpost-content">
-														<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
+										<h1>Mirror</h1>
+											
+				 						<p>
+											<b>Bliss-m-11010</b><br/><br/>
+											
+											Size: <br/> <br/>
+											A:	 36W x 36H x 2D in    |  91W x 91H x 5D cm <br/>
+											B:	 42W x 42H x 2.5D in  |  107W x 107H x 5.5D cm <br/>
+											C:	 48W x 48H x 2.5D in  |  122W x 122H x 6D cm <br/>
+											D:	 54W x 54H x 3D in    |  137W x 137H x 6.5D cm <br/>
+										
+											
+				 						</p>
 
 									     </div>
 

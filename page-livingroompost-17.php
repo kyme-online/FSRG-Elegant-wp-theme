@@ -30,7 +30,7 @@
 
 
 									<div id="contentpost-img">                                           
-										<img alt="furniture in dubai" src="<?php echo get_template_directory_uri().'/images/livingroom/W2323A-XM0193A.jpg'; ?>" />                                                               
+										<img src="<?php echo get_template_directory_uri().'/images/livingroom/W2323A-XM0193A.jpg'; ?>" />                                                               
 
 									
 									</div>

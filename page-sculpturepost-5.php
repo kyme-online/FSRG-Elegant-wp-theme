@@ -30,7 +30,7 @@
 				<div id="content-post">
 
 									<div id="contentpost-img">                                           
-										<img alt="home decor" src="<?php echo get_template_directory_uri().'/images/sculptures/JRA-9069.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/sculptures/JRA-9069.jpg'; ?>" />							
 
 										
 									</div>
@@ -38,23 +38,17 @@
 								
 
 									<div id="contentpost-content">
-												<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
+										<h1>Sculpture</h1>
+											
+				 						<p>
+											<b>JRA-9069</b><br/><br/>
+											Size: <br/>
+											Width:     18.5"  inch <br/>
+											Height:    9.5"   inch <br/>
+											Diameter:  8.5   <br/> <br/>
+											
+											This bronze sculpture of sea turtles floating in a sea of kelp will capture the heart of the ECO minded. 
+				 						</p>
 
 									     </div>
 

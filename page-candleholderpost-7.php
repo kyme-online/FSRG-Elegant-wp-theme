@@ -30,7 +30,7 @@
 
 
 									<div id="contentpost-img">                                           
-										<img alt="dubai home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/02185.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8646.jpg'; ?>" />							
 
 										
 									</div>
@@ -38,23 +38,17 @@
 								
 
 									<div id="contentpost-content">
-														<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
+										<h1>Candle Holder</h1>
+											
+				 						<p>
+											<b>JRA-8646</b><br/><br/>
+											Size: <br/> 
+											Width:    7"  inch <br/>
+											Height:   18" inch <br/>
+											Diameter  5 <br/> <br/> 
 
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
+											Interlinked rectangles comprise this candle stand that is finished with a warm brass patina and will hold a pillar candle. It is shown here in the shorter size. 
+				 						</p>
 
 									     </div>
 

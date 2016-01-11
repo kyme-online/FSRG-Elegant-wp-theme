@@ -104,61 +104,56 @@ jQuery.fn.fadeSlideShow = function(options) {
 			if(newIndex < 0){newIndex = Slides;}
 			else if(newIndex > Slides){newIndex = 0;}
 			if( newIndex >= ActSlide ){
-				jQuery('> *:lt('+(newIndex+1)+')', fssThis).f"#" id="'+settings.PlayPauseElement+'"><\/a>');
+				jQuery('> *:lt('+(newIndex+1)+')', fssThis).fadeIn(settings.speed);
+			}else if(newIndex <= ActSlide){
+				jQuery('> *:gt('+newIndex+')', fssThis).fadeOut(settings.speed);
 			}
 			
-			if(settings.autoplay){
-				jQuery('#'+settings.PlayPauseElement).html(settings.PauseText);
-			}else{
-				jQuery('#'+settings.PlayPauseElement).html(settings.PlayText);
+			// set the active slide
+			ActSlide = newIndex;
+
+			if(settings.ListElement){
+				// set active
+				jQuery('#'+settings.ListElement+' li').removeClass(settings.ListLiActive);
+				jQuery('#'+settings.ListElement+' li').eq((Slides-newIndex)).addClass(settings.ListLiActive);
 			}
-			
-			jQuery('#'+settings.PlayPauseElement).bind('click', function(){
-				if(intval){
-					stopAutoplay();
+		}
+		
+		// if list is on render it
+		if(settings.ListElement){
+			i=0;
+			li = '';
+			while(i<=Slides){
+				if(i==0){
+					li = li+'<li class="'+settings.ListLi+i+' '+settings.ListLiActive+'"><a href="#">'+(i+1)+'<\/a><\/li>';
 				}else{
-					autoplay();
+					li = li+'<li class="'+settings.ListLi+i+'"><a href="#">'+(i+1)+'<\/a><\/li>';
 				}
-				return false;
-			});
-		}
-		
-		if(settings.NextElement){
-			if(!jQuery('#'+settings.NextElement).css('display')){
-				jQuery(this).after('<a href="#" id="'+settings.NextElement+'">'+settings.NextElementText+'<\/a>');
+				i++;
+			}
+			List = '<ul id="'+settings.ListElement+'">'+li+'<\/ul>';
+			
+			// add list to a special id or append after the slideshow
+			if(settings.addListToId){
+				jQuery('#'+settings.addListToId).append(List);
+			}else{
+				jQuery(this).after(List);
 			}
 			
-			jQuery('#'+settings.NextElement).bind('click', function(){
-				nextSlide = ActSlide-1;
+			jQuery('#'+settings.ListElement+' a').bind('click', function(){
+				index = jQuery('#'+settings.ListElement+' a').index(this);
 				stopAutoplay();
-				jumpTo(nextSlide);
+				ReverseIndex = Slides-index;
+				
+				jumpTo(ReverseIndex);
+				
 				return false;
 			});
 		}
 		
-		if(settings.PrevElement){
-			if(!jQuery('#'+settings.PrevElement).css('display')){
-				jQuery(this).after('<a href="#" id="'+settings.PrevElement+'">'+settings.PrevElementText+'<\/a>');
-			}
-			
-			jQuery('#'+settings.PrevElement).bind('click', function(){
-				prevSlide = ActSlide+1;
-				stopAutoplay();
-				jumpTo(prevSlide);
-				return false;
-			});
-		}
-		
-		if(settings.allowKeyboardCtrl){
-			jQuery(document).bind('keydown', function(e){
-				if(e.which==39){
-					nextSlide = ActSlide-1;
-					stopAutoplay();
-					jumpTo(nextSlide);
-				}else if(e.which==37){
-					prevSlide = ActSlide+1;
-					stopAutoplay();
-"#" id="'+settings.PlayPauseElement+'"><\/a>');
+		if(settings.PlayPauseElement){
+			if(!jQuery('#'+settings.PlayPauseElement).css('display')){
+				jQuery(this).after('<a href="#" id="'+settings.PlayPauseElement+'"><\/a>');
 			}
 			
 			if(settings.autoplay){

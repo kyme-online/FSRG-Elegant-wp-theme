@@ -29,7 +29,7 @@
 				<div id="content-post">
 
 									<div id="contentpost-img">                                           
-										<img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/tori-l-m-11190.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/mirror/tori-l-m-11190.jpg'; ?>" />							
 
 									
 									</div>
@@ -37,23 +37,18 @@
 								
 
 									<div id="contentpost-content">
-													<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
+										<h1>Mirror</h1>
+											
+				 						<p>
+											<b>Tori l-m-11190</b><br/><br/>
+											
+											Size: <br/> <br/>
+											A:	47W x 47H x 2D in  |  120W x 120H x 5D cm<br/>
+											B:	56W x 56H x 2D in  |  142W x 142H x 5D cm<br/>
+											C:	67W x 67H x 2D in  |  170W x 170H x 5D cm<br/>
+											
+											
+				 						</p>
 
 									     </div>
 

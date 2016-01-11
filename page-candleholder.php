@@ -47,51 +47,50 @@
 										<a href="<?php echo home_url(); ?>" class="back"><img class="back" src="<?php echo get_template_directory_uri().'/images/back.png'; ?>" /></a>
 
 									</div>
-
-									<div id="candleholder">
-															<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<!--a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a><br/--!> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
-
-									</div>
  
 									<div id="paging_container3" class="container">
 											
 												<ul class="alt_content">
-														
-													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
+														<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
 																 <div class="gallery-images">
-																	<div class="item"><a href="/candleholderpost-1/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8833S2-small.png'; ?>"/></a><p><a href="/candleholderpost-1/">JRA-8833S2</a></p></div>
-																	<div class="item"><a href="/candleholderpost-2/"><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8860S2-small.png'; ?>"/></a><p><a href="/candleholderpost-2/">JRA-8860S2</a></p></div>
-																	<div class="item"><a href="/candleholderpost-3/"><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9256-small.png'; ?>"/></a><p><a href="/candleholderpost-3/">JRA-9256</a></p></div>
-																	<div class="item"><a href="/candleholderpost-4/"><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/1654-718-small.png'; ?>"/></a><p><a href="/candleholderpost-4/">1654-718</a></p></div>
-																	<div class="item"><a href="/candleholderpost-5/"><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8288-small.png'; ?>"/></a><p><a href="/candleholderpost-5/">JRA-8288</a></p></div>
-																	<div class="item"><a href="/candleholderpost-6/"><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9272S2-small.png'; ?>"/></a><p><a href="/candleholderpost-6/">JRA-9272S2</a></p></div>
+																	<div class="item"><a href="/candleholderpost-1/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8218-small.png'; ?>"/></a><p><a href="/candleholderpost-1/">JRA-8218</a></p></div>
+																	<div class="item"><a href="/candleholderpost-2/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8449S2-small.png'; ?>"/></a><p><a href="/candleholderpost-2/">JRA-8449S2</a></p></div>
+																	<div class="item"><a href="/candleholderpost-3/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8456-small.png'; ?>"/></a><p><a href="/candleholderpost-3/">JRA-8456</a></p></div>
+																	<div class="item"><a href="/candleholderpost-4/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8515S3-small.png'; ?>"/></a><p><a href="/candleholderpost-4/">JRA-8515S3</a></p></div>
+																	<div class="item"><a href="/candleholderpost-5/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8581-small.png'; ?>"/></a><p><a href="/candleholderpost-5/">JRA-8581</a></p></div>
+																	<div class="item"><a href="/candleholderpost-6/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8597-small.png'; ?>"/></a><p><a href="/candleholderpost-6/">JRA-8597</a></p></div>
 																</div>
 													</p></li>
 
 													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
 																 <div class="gallery-images">
-																	<div class="item"><a href="/candleholderpost-7/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/02185-small.png'; ?>"/></a><p><a href="/candleholderpost-7/">02185</a></p></div>
-																	<div class="item"><a href="/candleholderpost-8/"><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/02187-small.png'; ?>"/></a><p><a href="/candleholderpost-8/">02187</a></p></div>
+																	<div class="item"><a href="/candleholderpost-7/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8646-small.png'; ?>"/></a><p><a href="/candleholderpost-7/">JRA-8646</a></p></div>
+																	<div class="item"><a href="/candleholderpost-8/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8649-small.png'; ?>"/></a><p><a href="/candleholderpost-8/">JRA-8649</a></p></div>
+																	<div class="item"><a href="/candleholderpost-9/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8833S2-small.png'; ?>"/></a><p><a href="/candleholderpost-9/">JRA-8833S2</a></p></div>
+																	<div class="item"><a href="/candleholderpost-10/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8860S2-small.png'; ?>"/></a><p><a href="/candleholderpost-10/">JRA-8860S2</a></p></div>
+																	<div class="item"><a href="/candleholderpost-11/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-8878-small.png'; ?>"/></a><p><a href="/candleholderpost-11/">JRA-8878</a></p></div>
+																	<div class="item"><a href="/candleholderpost-12/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9256-small.png'; ?>"/></a><p><a href="/candleholderpost-12/">JRA-9256</a></p></div>
 																</div>
 													</p></li>
 
-												
+													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
+																 <div class="gallery-images">
+																	<div class="item"><a href="/candleholderpost-13/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9378-small.png'; ?>"/></a><p><a href="/candleholderpost-13/">JRA-9378</a></p></div>
+																	<div class="item"><a href="/candleholderpost-14/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9381-small.png'; ?>"/></a><p><a href="/candleholderpost-14/">JRA-9381</a></p></div>
+																	<div class="item"><a href="/candleholderpost-15/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9382-small.png'; ?>"/></a><p><a href="/candleholderpost-15/">JRA-9382</a></p></div>
+																	<div class="item"><a href="/candleholderpost-16/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9536-small.png'; ?>"/></a><p><a href="/candleholderpost-16/">JRA-9536</a></p></div>
+																	<div class="item"><a href="/candleholderpost-17/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9560-small.png'; ?>"/></a><p><a href="/candleholderpost-17/">JRA-9560</a></p></div>
+																	<div class="item"><a href="/candleholderpost-18/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9621-small.png'; ?>"/></a><p><a href="/candleholderpost-18/">JRA-9621</a></p></div>
+																</div>
+													</p></li>
+
+													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
+																 <div class="gallery-images">
+																	<div class="item"><a href="/candleholderpost-19/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9622-small.png'; ?>"/></a><p><a href="/candleholderpost-19/">JRA-9622</a></p></div>
+																	<div class="item"><a href="/candleholderpost-20/" ><img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9649S3-small.png'; ?>"/></a><p><a href="/candleholderpost-20/">JRA-9649S3</a></p></div>
+																	
+																</div>
+													</p></li>
 
 													
 												

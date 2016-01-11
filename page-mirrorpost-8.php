@@ -29,7 +29,7 @@
 				<div id="content-post">
 
 									<div id="contentpost-img">                                           
-										<img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/mesa-ll-m-13112.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/mirror/mesa-ll-m-13112.jpg'; ?>" />							
 
 									
 									</div>
@@ -37,23 +37,20 @@
 								
 
 									<div id="contentpost-content">
-																<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
+										<h1>Mirror</h1>
+											
+				 						<p>
+											<b>Mesa-ll-m-13112</b><br/><br/>
+											
+											Size: <br/> <br/>
+											A:	18W x 29H x 1.5D in  |  46W x 74H x 3D cm<br/>
+											B:	23W x 37H x 1.5D in  |  58W x 94H x 3.5D cm<br/>
+											C:  28W x 45H x 2D in    |  71W x 114H x 4D cm<br/>
+											D:  33W x 53H x 2D in    |  84W x 135H x 4.5D cm<br/>
+											E:  38W x 61H x 2D in    |  97W x 155H x 5D cm<br/>
+											F:  43W x 69H x 2.5D in  |  109W x 175H x 5.5D cm<br/>
+											
+				 						</p>
 
 									     </div>
 

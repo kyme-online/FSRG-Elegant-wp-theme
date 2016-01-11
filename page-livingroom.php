@@ -46,55 +46,47 @@
 
 									</div>
 
-									<div id="livingroom">
-															<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<!--a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a><br/--!> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
-
-									</div>
-
 										<div id="paging_container3" class="container">
 											
 												<ul class="alt_content"> 
 
 													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG /PNG -->
 																 <div class="gallery-content">
-																	<div class="item"><a href="/livingroompost-1/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/FS-11000-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-1/">FS-11000</a></p></div>
-																	<div class="item"><a href="/livingroompost-2/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/W2323A-XM0193A-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-2/">W2323A-XM0193A</a></p></div>
-																	<div class="item"><a href="/livingroompost-3/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/FS-11120-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-3">FS-11120</a></p></div>
-																	<div class="item"><a href="/livingroompost-4/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/3330-082-A-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-4">3330-082-A</a></p></div>
-																	<div class="item"><a href="/livingroompost-5/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/FS-11130-A-GL06.png'; ?>"/></a><p><a href="/livingroompost-5">FS-11130-A-GL06</a></p></div>
-																	<div class="item"><a href="/livingroompost-6/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/ARISOFA-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-6">ARISOFA</a></p></div>
-																<div style="clear:both"></div> 
+																	<div class="item"><a href="/livingroompost-1/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/F2202-XM0321-small.png'; ?>"/></a><p><a href="/livingroompost-1/">F2202-XM0321</a></p></div>
+																	<div class="item"><a href="/livingroompost-2/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/F2204-XM0108-small.png'; ?>"/></a><p><a href="/livingroompost-2/">F2204-XM0108</a></p></div>
+																	<div class="item"><a href="/livingroompost-3/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/F2304-XM0317-small.png'; ?>"/></a><p><a href="/livingroompost-3">F2304-XM0317</a></p></div>
+																	<div class="item"><a href="/livingroompost-4/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/F2311A-XM0328-small.png'; ?>"/></a><p><a href="/livingroompost-4">F2311A-XM0328</a></p></div>
+																	<div class="item"><a href="/livingroompost-5/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/F2320-XM0174-small.png'; ?>"/></a><p><a href="/livingroompost-5">F2320-XM0174</a></p></div>
+																	<div class="item"><a href="/livingroompost-6/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/FS-11000-small.png'; ?>"/></a><p><a href="/livingroompost-6">FS-11000</a></p></div>
+																<div style="clear:both"></div>
 																</div> 
 													</p></li>
 
 													<li><p>	  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG /PNG -->
 																 <div class="gallery-content">
-																	<div class="item"><a href="/livingroompost-7/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/BELLAGIOSOFA-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-7/">BELLAGIOSOFA</a></p></div>
-																	<div class="item"><a href="/livingroompost-8/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/COCOSWIVELCHAIR-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-8/">COCO SWIVEL CHAIR</a></p></div>
-																	<div class="item"><a href="/livingroompost-9/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/CORSET-CHR-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-9">CORSET-CHR</a></p></div>
-																	<div class="item"><a href="/livingroompost-10/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/KUROSOFA-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-10">KURO SOFA</a></p></div>
-																	<div class="item"><a href="/livingroompost-11/" ><img alt="dubai furniture" src="<?php echo get_template_directory_uri().'/images/livingroom/Mez-sofa-small-livingroom.png'; ?>"/></a><p><a href="/livingroompost-11">W2321-XM0300</a></p></div>
-																
+																	<div class="item"><a href="/livingroompost-7/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/FS-11060-small.png'; ?>"/></a><p><a href="/livingroompost-7/">FS-11060</a></p></div>
+																	<div class="item"><a href="/livingroompost-8/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/FS-11080-small.png'; ?>"/></a><p><a href="/livingroompost-8/">FS-11080</a></p></div>
+																	<div class="item"><a href="/livingroompost-9/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/FS-11110-small.png'; ?>"/></a><p><a href="/livingroompost-9">FS-11110</a></p></div>
+																	<div class="item"><a href="/livingroompost-10/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/FS-11120-small.png'; ?>"/></a><p><a href="/livingroompost-10">FS-11120</a></p></div>
+																	<div class="item"><a href="/livingroompost-11/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/W2206-XM0169-small.png'; ?>"/></a><p><a href="/livingroompost-11">W2206-XM0169</a></p></div>
+																	<div class="item"><a href="/livingroompost-12/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/W2208-XM0055-small.png'; ?>"/></a><p><a href="/livingroompost-12">W2208-XM0055</a></p></div>
+																</div>
+													</p></li>
+
+													<li><p>	  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG /PNG -->
+																 <div class="gallery-content">
+																	<div class="item"><a href="/livingroompost-13/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/W2208-XM0169-small.png'; ?>"/></a><p><a href="/livingroompost-13/">W2208-XM0169</a></p></div>
+																	<div class="item"><a href="/livingroompost-14/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/W2210-XM0220-small.png'; ?>"/></a><p><a href="/livingroompost-14/">W2210-XM0220</a></p></div>
+																	<div class="item"><a href="/livingroompost-15/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/W2210A-XM0005C-small.png'; ?>"/></a><p><a href="/livingroompost-15">W2210A-XM0005C</a></p></div>
+																	<div class="item"><a href="/livingroompost-16/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/W2306-XM0317-small.png'; ?>"/></a><p><a href="/livingroompost-16">W2306-XM0317</a></p></div>
+																	<div class="item"><a href="/livingroompost-17/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/W2323A-XM0193A-small.png'; ?>"/></a><p><a href="/livingroompost-17">W2323A-XM0193A</a></p></div>
+																	<div class="item"><a href="/livingroompost-18/" ><img src="<?php echo get_template_directory_uri().'/images/livingroom/W2408-XM0319-small.png'; ?>"/></a><p><a href="/livingroompost-18">W2408-XM0319</a></p></div>
 																</div>
 													</p></li>
 
 													
+
+
 												</ul>
 
 											<div class="alt_page_navigation"></div>

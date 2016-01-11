@@ -29,7 +29,7 @@
 				<div id="content-post">
 
 									<div id="contentpost-img">                                           
-										<img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/birlliant-m-15230.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/mirror/birlliant-m-15230.jpg'; ?>" />							
 
 									
 									</div>
@@ -37,23 +37,16 @@
 								
 
 									<div id="contentpost-content">
-														<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
+										<h1>Mirror</h1>
+											
+				 						<p>
+											<b>Birlliant-m-15230</b><br/><br/>
+											
+											Size: <br/> <br/>
+											A:	45W x 45H x 2D in  |  115W x 115H x 5D cm<br/>
+											B:	59W x 59H x 2D in  |  150W x 150H x 5D cm<br/>
+											C:  73W x 73H x 2D in  |  185W x 185H x 5D cm
+				 						</p>
 
 									     </div>
 

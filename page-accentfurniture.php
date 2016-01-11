@@ -48,26 +48,6 @@
 
 									</div>
 
-									<div id="accentfurniture">
-										<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<!--a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>	<div class="about-line"></div--> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
-
-									</div>
 
 										<div id="paging_container3" class="container">
 											
@@ -75,32 +55,34 @@
 
 													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
 																 <div class="gallery-images">
-																	<div class="item"><a href="/accentfurniturepost-1/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/EUR-02-0158-small.png'; ?>"/></a><p><a href="/accentfurniturepost-1/">EUR-02-0158</a></p></div>           
-																	<div class="item"><a href="/accentfurniturepost-2/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11000-small.png'; ?>"/></a><p><a href="/accentfurniturepost-2/">FC-11000</a></p></div> 
-																	<div class="item"><a href="/accentfurniturepost-3/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11020-small.png'; ?>"/></a><p><a href="/accentfurniturepost-3/">FC-11020</a></p></div> 
-																	<div class="item"><a href="/accentfurniturepost-4/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11050-small.png'; ?>"/></a><p><a href="/accentfurniturepost-4/">FC-11050</a></p></div> 
-																	<div class="item"><a href="/accentfurniturepost-5/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11061-small.png'; ?>"/></a><p><a href="/accentfurniturepost-5/">FC-11061</a></p></div>           
-																	<div class="item"><a href="/accentfurniturepost-6/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11101-small.png'; ?>"/></a><p><a href="/accentfurniturepost-6/">FC-11101</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-1/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/EUR-02-0158-small.png'; ?>"/></a><p><a href="/accentfurniturepost-1/">EUR-02-0158</a></p></div>           
+																	<div class="item"><a href="/accentfurniturepost-2/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11000-small.png'; ?>"/></a><p><a href="/accentfurniturepost-2/">FC-11000</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-3/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11020-small.png'; ?>"/></a><p><a href="/accentfurniturepost-3/">FC-11020</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-4/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11050-small.png'; ?>"/></a><p><a href="/accentfurniturepost-4/">FC-11050</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-5/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11061-small.png'; ?>"/></a><p><a href="/accentfurniturepost-5/">FC-11061</a></p></div>           
+																	<div class="item"><a href="/accentfurniturepost-6/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11101-small.png'; ?>"/></a><p><a href="/accentfurniturepost-6/">FC-11101</a></p></div> 
 																</div>
 													</p></li>
 
 													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
 																 <div class="gallery-images">
-																	<div class="item"><a href="/accentfurniturepost-7/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11180-small.png'; ?>"/></a><p><a href="/accentfurniturepost-7/">FC-11180</a></p></div>           
-																	<div class="item"><a href="/accentfurniturepost-8/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11190-small.png'; ?>"/></a><p><a href="/accentfurniturepost-8/">FC-11190</a></p></div> 
-																	<div class="item"><a href="/accentfurniturepost-9/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11200-small.png'; ?>"/></a><p><a href="/accentfurniturepost-9/">FC-11200</a></p></div> 
-																	<div class="item"><a href="/accentfurniturepost-10/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11230-small.png'; ?>"/></a><p><a href="/accentfurniturepost-10/">FC-11230</a></p></div> 
-																	<div class="item"><a href="/accentfurniturepost-11/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11240-small.png'; ?>"/></a><p><a href="/accentfurniturepost-11/">FC-11240</a></p></div>           
-																	<div class="item"><a href="/accentfurniturepost-12/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11250-small.png'; ?>"/></a><p><a href="/accentfurniturepost-12/">FC-11250</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-7/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11180-small.png'; ?>"/></a><p><a href="/accentfurniturepost-7/">FC-11180</a></p></div>           
+																	<div class="item"><a href="/accentfurniturepost-8/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11190-small.png'; ?>"/></a><p><a href="/accentfurniturepost-8/">FC-11190</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-9/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11200-small.png'; ?>"/></a><p><a href="/accentfurniturepost-9/">FC-11200</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-10/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11230-small.png'; ?>"/></a><p><a href="/accentfurniturepost-10/">FC-11230</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-11/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11240-small.png'; ?>"/></a><p><a href="/accentfurniturepost-11/">FC-11240</a></p></div>           
+																	<div class="item"><a href="/accentfurniturepost-12/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11250-small.png'; ?>"/></a><p><a href="/accentfurniturepost-12/">FC-11250</a></p></div> 
 																</div>
 													</p></li>
 												
 													<li><p>  <!-- TO ADD IMAGE, PLEASE COPY THIS BLOCK AND RENAME IMAGE.JPG -->
 																 <div class="gallery-images">
-																	<div class="item"><a href="/accentfurniturepost-13/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11280-small.png'; ?>"/></a><p><a href="/accentfurniturepost-13/">FC-11280</a></p></div>           
-																	<div class="item"><a href="/accentfurniturepost-14/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FT-11230-small.png'; ?>"/></a><p><a href="/accentfurniturepost-14/">FC-11230</a></p></div> 
-																	<div class="item"><a href="/accentfurniturepost-15/" ><img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/accentfurniture/FT-11240-small.png'; ?>"/></a><p><a href="/accentfurniturepost-15/">FT-11240</a></p></div> 
-																
+																	<div class="item"><a href="/accentfurniturepost-13/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11280-small.png'; ?>"/></a><p><a href="/accentfurniturepost-13/">FC-11280</a></p></div>           
+																	<div class="item"><a href="/accentfurniturepost-14/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11300-small.png'; ?>"/></a><p><a href="/accentfurniturepost-14/">FC-11300</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-15/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FT-11200-small.png'; ?>"/></a><p><a href="/accentfurniturepost-15/">FT-11200</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-16/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FC-11230-small.png'; ?>"/></a><p><a href="/accentfurniturepost-16/">FC-11230</a></p></div> 
+																	<div class="item"><a href="/accentfurniturepost-17/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/FT-11240-small.png'; ?>"/></a><p><a href="/accentfurniturepost-17/">FT-11240</a></p></div>           
+																	<div class="item"><a href="/accentfurniturepost-18/" ><img src="<?php echo get_template_directory_uri().'/images/accentfurniture/M-15470-small.png'; ?>"/></a><p><a href="/accentfurniturepost-18/">M-15470</a></p></div> 
 																</div>
 													</p></li>
 

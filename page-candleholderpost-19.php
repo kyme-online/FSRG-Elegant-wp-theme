@@ -30,7 +30,7 @@
 
 
 									<div id="contentpost-img">                                           
-										<img alt="home accessories" src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9622.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/candleholder/JRA-9622.jpg'; ?>" />							
 
 									
 									</div>

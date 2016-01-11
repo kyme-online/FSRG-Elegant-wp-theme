@@ -29,7 +29,7 @@
 				<div id="content-post">
 
 									<div id="contentpost-img">                                           
-										<img alt="home mirror" src="<?php echo get_template_directory_uri().'/images/mirror/blane-m-11085.jpg'; ?>" />							
+										<img src="<?php echo get_template_directory_uri().'/images/mirror/blane-m-11085.jpg'; ?>" />							
 
 									
 									</div>
@@ -37,23 +37,17 @@
 								
 
 									<div id="contentpost-content">
-															<?php if ( have_posts() ): ?>
-															<!--h2>Latest Posts</h2-->	
-															<ol>
-
-															<?php while ( have_posts() ) : the_post(); ?>
-																<li>
-																	<article>
-																		<a class="image-title" href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <br/> 
-																		<!--<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?> -->
-																	</article><p><?php the_content(); ?></p>
-																	
-																</li>
-															<?php endwhile; ?>
-															</ol>
-															<?php else: ?>
-															<h2>No posts to display</h2>
-												<?php endif; ?>
+										<h1>Mirror</h1>
+											
+				 						<p>
+											<b>Blane-m-11085</b><br/><br/>
+											
+											Size: <br/> <br/>
+											A:	28W x 43H x 2.5D in  |  70W x 110H x 6D cm<br/>
+											B:	37W x 59H x 2.5D in  |  95W x 149H x 6D cm<br/>
+											C:  47W x 74H x 2.5D in  |  120W x 189H x 6D cm<br/>
+											
+				 						</p>
 
 									     </div>
 
